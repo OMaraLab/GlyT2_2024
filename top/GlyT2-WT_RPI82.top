@@ -1,0 +1,57 @@
+
+; Include forcefield parameters
+#include "../gromos54a7_atb.ff/forcefield.itp"
+#include "../gromos54a7_atb.ff/vdw_OML_CH3L.itp"
+
+#ifndef HMR
+
+
+; Include molecule topologies
+#include "../gromos54a7_atb.ff/R82H_GROMACS_G54A7FF_unitedatom.itp"
+#include "../gromos54a7_atb.ff/CHS_GROMACS_G54A7FF_unitedatom.itp"
+#include "../gromos54a7_atb.ff/GlyT2_trunc.itp"
+#include "../gromos54a7_atb.ff/popc.itp"
+#include "../gromos54a7_atb.ff/CLR.itp"
+#include "../gromos54a7_atb.ff/CHOL.itp"
+
+#else
+
+; Include molecule topologies
+#include "../gromos54a7_atb.ff/R82H_GROMACS_G54A7FF_unitedatom_heavy.itp"
+#include "../gromos54a7_atb.ff/CHS_GROMACS_G54A7FF_unitedatom_heavy.itp"
+#include "../gromos54a7_atb.ff/GlyT2_trunc_heavy.itp"
+#include "../gromos54a7_atb.ff/popc_heavy.itp"
+#include "../gromos54a7_atb.ff/CLR_heavy.itp"
+#include "../gromos54a7_atb.ff/CHOL_heavy.itp" 
+
+#endif
+
+; Include water topology
+#include "../gromos54a7_atb.ff/spc.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "../gromos54a7_atb.ff/ions.itp"
+
+[ system ]
+; Name
+GlyT2 R82H 
+
+[ molecules ]
+; Compound        #mols
+GlyT2_WT_trunc               1
+R82H                1
+CL                   1
+CHOL                 2
+CHS                 1
+POPC              775
+CLR              197
+SOL         73855
+NA               335
+CL               340

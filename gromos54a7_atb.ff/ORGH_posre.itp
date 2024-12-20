@@ -1,0 +1,43 @@
+; position restraints for System of UNITED ATOM STRUCTURE FOR MOLECULE 4K0
+
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       p_rest     p_rest     p_rest
+   2    1       p_rest     p_rest     p_rest
+   3    1       p_rest     p_rest     p_rest
+   4    1       p_rest     p_rest     p_rest
+   5    1       p_rest     p_rest     p_rest
+   6    1       p_rest     p_rest     p_rest
+   7    1       p_rest     p_rest     p_rest
+   8    1       p_rest     p_rest     p_rest
+   9    1       p_rest     p_rest     p_rest
+  10    1       p_rest     p_rest     p_rest
+  11    1       p_rest     p_rest     p_rest
+  12    1       p_rest     p_rest     p_rest
+  13    1       p_rest     p_rest     p_rest
+  14    1       p_rest     p_rest     p_rest
+  15    1       p_rest     p_rest     p_rest
+  16    1       p_rest     p_rest     p_rest
+  17    1       p_rest     p_rest     p_rest
+  18    1       p_rest     p_rest     p_rest
+  19    1       p_rest     p_rest     p_rest
+  20    1       p_rest     p_rest     p_rest
+  21    1       p_rest     p_rest     p_rest
+  22    1       p_rest     p_rest     p_rest
+  23    1       p_rest     p_rest     p_rest
+  24    1       p_rest     p_rest     p_rest
+  25    1       p_rest     p_rest     p_rest
+  26    1       p_rest     p_rest     p_rest
+  27    1       p_rest     p_rest     p_rest
+  28    1       p_rest     p_rest     p_rest
+  29    1       p_rest     p_rest     p_rest
+  30    1       p_rest     p_rest     p_rest
+  31    1       p_rest     p_rest     p_rest
+  32    1       p_rest     p_rest     p_rest
+  33    1       p_rest     p_rest     p_rest
+  34    1       p_rest     p_rest     p_rest
+  35    1       p_rest     p_rest     p_rest
+  36    1       p_rest     p_rest     p_rest
+  37    1       p_rest     p_rest     p_rest
+  38    1       p_rest     p_rest     p_rest
+  39    1       p_rest     p_rest     p_rest
